@@ -1,0 +1,24 @@
+.accordion {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.accordion__container {
+    z-index: 1;
+}
+
+.accordion_head {
+    @apply cursor-pointer z-[1] flex text-left justify-between p-2 border-y-[1px] border-neutral-800
+}
+
+.accordion > div {
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.accordion_active {
+    grid-template-rows: 1fr;
+}

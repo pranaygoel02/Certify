@@ -1,0 +1,15 @@
+.indicator [data-status='active'] {
+    fill: #26BF19;
+}
+  
+.indicator [data-status='inactive'] {
+    fill: #EF3838;
+}
+  
+.indicator [data-status='pending data'] {
+    fill: var(--pink-3);
+}
+  
+.indicator [data-status='decommissioned'] {
+    fill: var(--gray-3);
+}
